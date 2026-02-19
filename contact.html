@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Shri Ram Mandir</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-warm">
+
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-saffron" href="index.html">
+                <i class="fa-solid fa-om me-2"></i>Shri Ram Mandir
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars text-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#about">About Temple</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#darshan">Darshan</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#donate">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link text-saffron fw-bold" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header d-flex align-items-center justify-content-center text-center position-relative">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-1 text-white fade-in-up mt-5">
+            <h1 class="display-3 fw-bold font-cinzel mb-3">Get in Touch</h1>
+            <p class="lead">We are here to assist you with your Yatra, donations, and general inquiries.</p>
+        </div>
+    </section>
+
+    <section class="section-padding pb-0 mt-n5 position-relative z-2">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 reveal">
+                    <div class="contact-card bg-white text-center p-4 rounded shadow-sm h-100">
+                        <div class="icon-box mx-auto mb-3 bg-warm text-saffron rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-location-dot fa-2x"></i>
+                        </div>
+                        <h4 class="font-cinzel">Location</h4>
+                        <p class="text-muted mb-0">Shri Ram Janmabhoomi Complex,<br>Ayodhya, Uttar Pradesh<br>224123, India</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal" style="transition-delay: 0.1s;">
+                    <div class="contact-card bg-white text-center p-4 rounded shadow-sm h-100">
+                        <div class="icon-box mx-auto mb-3 bg-warm text-saffron rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-phone fa-2x"></i>
+                        </div>
+                        <h4 class="font-cinzel">Call Us</h4>
+                        <p class="text-muted mb-1">General: +91 98765 43210</p>
+                        <p class="text-muted mb-0">Donation Help: +91 98765 43211</p>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal" style="transition-delay: 0.2s;">
+                    <div class="contact-card bg-white text-center p-4 rounded shadow-sm h-100">
+                        <div class="icon-box mx-auto mb-3 bg-warm text-saffron rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-envelope fa-2x"></i>
+                        </div>
+                        <h4 class="font-cinzel">Email Us</h4>
+                        <p class="text-muted mb-1">info@shrirammandir.org</p>
+                        <p class="text-muted mb-0">support@shrirammandir.org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center bg-white p-4 p-md-5 rounded shadow-sm reveal">
+                
+                <div class="col-lg-6 pr-lg-5">
+                    <h3 class="font-cinzel text-saffron mb-4">Send Us a Message</h3>
+                    <p class="text-muted mb-4">Have a question about darshan timings, special pujas, or volunteering? Fill out the form below and our administrative team will respond to you promptly.</p>
+                    
+                    <form action="#" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label small text-muted">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Jay Shri Ram" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label small text-muted">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+91 00000 00000">
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label small text-muted">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="example@mail.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label small text-muted">Subject Inquiry <span class="text-danger">*</span></label>
+                                <select class="form-select border-0 bg-warm" id="subject" style="border-radius: 0; border: 1px solid #ddd !important;" required>
+                                    <option value="" selected disabled>Select an option...</option>
+                                    <option value="darshan">Darshan / Aarti Info</option>
+                                    <option value="donation">Donation / Receipt Query</option>
+                                    <option value="volunteer">Volunteer (Seva)</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label small text-muted">Your Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary-custom w-100 py-3 fs-5">Submit Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="map-container rounded overflow-hidden shadow-sm border border-warm p-1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2278457630737!2d82.19448057618218!3d26.795281876717515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a07937e6d2823%3A0x5fc8f683b17f222b!2sShri%20Ram%20Janmabhoomi%20Teerth%20Kshetra!5e0!3m2!1sen!2sin!4v1708362615462!5m2!1sen!2sin" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="text-white font-cinzel mb-4"><i class="fa-solid fa-om me-2 text-saffron"></i>Shri Ram Mandir</h4>
+                    <p class="text-muted">Dedicated to preserving the eternal legacy, teachings, and divine grace of Maryada Purushottam Prabhu Shri Ram.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html#about">About Temple</a></li>
+                        <li><a href="index.html#darshan">Darshan Timings</a></li>
+                        <li><a href="index.html#events">Upcoming Events</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Online Puja Booking</a></li>
+                        <li><a href="index.html#donate">Donation</a></li>
+                        <li><a href="#">Volunteer (Seva)</a></li>
+                        <li><a href="#">Publications</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p class="text-muted">Subscribe to receive temple updates and spiritual insights.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control border-0" placeholder="Email Address">
+                        <button class="btn btn-primary-custom" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted pt-2">
+                <small>&copy; 2026 Shri Ram Mandir. All Rights Reserved. Designed with devotion.</small>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
