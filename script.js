@@ -80,3 +80,76 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    // ... [AAPKA PEHLE WALA SCROLL AUR NAVBAR KA CODE YAHI RAHEGA] ...
+
+    // ==========================================
+    // Cloudinary Automatic Gallery Fetch (By Tag)
+    // ==========================================
+    
+    // Aapka Cloudinary cloud name (aapke URL se nikala hua)
+    const cloudName = 'dngw5m9p8';
+    // Wo tag jo aapne Cloudinary me images ko diya hai
+    const tagName = 'mandir_gallery'; 
+
+    const galleryGrid = document.getElementById('galleryGrid');
+    const lightboxImage = document.getElementById('lightboxImage');
+
+    async function loadGalleryAutomatically() {
+        if (!galleryGrid) return; // Agar gallery page nahi hai toh aage mat badho
+
+        galleryGrid.innerHTML = '<div class="col-12 text-center"><i class="fa-solid fa-spinner fa-spin fa-2x text-saffron"></i><p class="mt-2">Loading Divine Glimpses...</p></div>';
+
+        // Cloudinary se automatic tag ki list mangwana
+        const listUrl = `https://res.cloudinary.com/${cloudName}/image/list/${tagName}.json`;
+
+        try {
+            const response = await fetch(listUrl);
+            
+            if (!response.ok) {
+                throw new Error("Gallery list fetch failed. Did you enable Resource List in Cloudinary Security settings?");
+            }
+
+            const data = await response.json();
+            galleryGrid.innerHTML = ''; // Loading spinner hata do
+
+            // Cloudinary har image ka data 'resources' array me bhejta hai
+            data.resources.forEach(img => {
+                // img.public_id me image ka naam hota hai
+                // Hum khud automatic URL banayenge
+                
+                // Original High-Quality URL (Lightbox ke liye)
+                const originalUrl = `https://res.cloudinary.com/${cloudName}/image/upload/v${img.version}/${img.public_id}.${img.format}`;
+                
+                // Thumbnail URL (w_600, q_auto, f_auto) taaki page fast load ho
+                const thumbUrl = `https://res.cloudinary.com/${cloudName}/image/upload/w_600,q_auto,f_auto/v${img.version}/${img.public_id}.${img.format}`;
+
+                const html = `
+                    <div class="col-lg-4 col-md-6 gallery-box reveal active">
+                        <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal" onclick="openLightbox('${originalUrl}')">
+                            <img src="${thumbUrl}" alt="Shri Ram Mandir" class="img-fluid w-100" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                galleryGrid.insertAdjacentHTML('beforeend', html);
+            });
+
+        } catch (error) {
+            console.error("Error loading images:", error);
+            galleryGrid.innerHTML = '<div class="col-12 text-center text-danger"><p>Failed to load gallery images. Please check console for errors.</p></div>';
+        }
+    }
+
+    // Lightbox Function
+    window.openLightbox = function(imageUrl) {
+        if (lightboxImage) {
+            lightboxImage.src = imageUrl;
+        }
+    };
+
+    // Load function call karein
+    loadGalleryAutomatically();
+});

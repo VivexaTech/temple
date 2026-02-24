@@ -27,13 +27,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#about">About Temple</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#darshan">Darshan</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#events">Events</a></li>
-                    <li class="nav-item"><a class="nav-link text-saffron fw-bold" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#donate">Donate</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Temple</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#darshan">Darshan Timing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#donate">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -50,74 +50,16 @@
     <section class="section-padding pt-5">
         <div class="container">
             
-            <div class="row mb-5 reveal">
-                <div class="col-12 text-center">
-                    <div class="filter-group d-flex justify-content-center flex-wrap gap-2">
-                        <button class="btn btn-outline-saffron active filter-btn" data-filter="all">All</button>
-                        <button class="btn btn-outline-saffron filter-btn" data-filter="architecture">Architecture</button>
-                        <button class="btn btn-outline-saffron filter-btn" data-filter="festivals">Festivals</button>
-                        <button class="btn btn-outline-saffron filter-btn" data-filter="darshan">Darshan & Aarti</button>
-                    </div>
-                </div>
-            </div>
+<div class="row mb-5 reveal">
+    <div class="col-12 text-center">
+        <h3 class="font-cinzel text-saffron">All Divine Glimpses</h3>
+        <div class="divider mx-auto mt-3"></div>
+    </div>
+</div>
 
-            <div class="row g-4 gallery-grid" id="galleryGrid">
-                
-                <div class="col-lg-4 col-md-6 gallery-box reveal" data-category="architecture">
-                    <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                        <img src="https://images.unsplash.com/photo-1620002093390-0925208f2e21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Temple Architecture" class="img-fluid w-100">
-                        <div class="gallery-overlay">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 gallery-box reveal" data-category="festivals">
-                    <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                        <img src="https://images.unsplash.com/photo-1605649487212-4dcfbfb0bc44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Deepotsav Celebration" class="img-fluid w-100">
-                        <div class="gallery-overlay">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 gallery-box reveal" data-category="darshan">
-                    <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                        <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Morning Aarti" class="img-fluid w-100">
-                        <div class="gallery-overlay">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 gallery-box reveal" data-category="architecture">
-                    <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                        <img src="https://images.unsplash.com/photo-1514222046456-42fbb1b919af?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Carved Pillars" class="img-fluid w-100">
-                        <div class="gallery-overlay">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 gallery-box reveal" data-category="festivals">
-                    <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                        <img src="https://images.unsplash.com/photo-1582972236019-ea4af5eeccb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ram Navami" class="img-fluid w-100">
-                        <div class="gallery-overlay">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 gallery-box reveal" data-category="darshan">
-                    <div class="gallery-item shadow-sm" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-                        <img src="https://images.unsplash.com/photo-1604505315890-76035cb676e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Devotees Praying" class="img-fluid w-100">
-                        <div class="gallery-overlay">
-                            <i class="fa-solid fa-magnifying-glass-plus"></i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+<div class="row g-4 gallery-grid" id="galleryGrid">
+    
+</div>
             
             <div class="text-center mt-5 reveal">
                 <button class="btn btn-primary-custom px-5 py-2"><i class="fa-solid fa-spinner me-2"></i> Load More</button>
@@ -154,7 +96,7 @@
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
                     <h5 class="text-white mb-4">Quick Links</h5>
                     <ul class="list-unstyled footer-links">
-                        <li><a href="index.html#about">About Temple</a></li>
+                        <li><a href="about.html">About Temple</a></li>
                         <li><a href="index.html#darshan">Darshan Timings</a></li>
                         <li><a href="index.html#events">Upcoming Events</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
@@ -163,10 +105,10 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h5 class="text-white mb-4">Services</h5>
                     <ul class="list-unstyled footer-links">
-                        <li><a href="#">Online Puja Booking</a></li>
+                        <li><a href="index.html">Online Puja Booking</a></li>
                         <li><a href="index.html#donate">Donation</a></li>
-                        <li><a href="#">Volunteer (Seva)</a></li>
-                        <li><a href="#">Publications</a></li>
+                        <li><a href="index.html">Volunteer (Seva)</a></li>
+                        <li><a href="index.html">Publications</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
